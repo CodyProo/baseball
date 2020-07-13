@@ -696,7 +696,6 @@ ul {
 .container_home .chatbox .chatbox_item li span {
     color: #fff;
     font-size: 8px;
-    font-family: 'roboto_medium';
     margin: 0;
 }
 
@@ -708,7 +707,6 @@ ul {
     color: #ccc;
     font-size: 8px;
     height: 25px;
-    font-family: 'roboto_medium';
     width: 100%;
     margin-top: 5px;
     overflow: hidden;
