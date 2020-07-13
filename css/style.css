@@ -1,15 +1,25 @@
 @font-face {
-    src: url('../fonts/Roboto-Light.ttf');
+    src: url('../fonts/Gilroy-ExtraBold\ 800.otf');
+    font-family: 'Gilroy';
+}
+
+@font-face {
+    src: url('../fonts/Gilroy-Light\ 300.otf');
+    font-family: 'Gilroy-Light';
+}
+
+@font-face {
+    src: url('../fonts/Vazir-Light.ttf');
     font-family: 'roboto_light';
 }
 
 @font-face {
-    src: url('../fonts/Roboto-Bold.ttf');
+    src: url('../fonts/Vazir-Bold.ttf');
     font-family: 'roboto_bold';
 }
 
 @font-face {
-    src: url('../fonts/Roboto-Medium.ttf');
+    src: url('../fonts/Vazir.ttf');
     font-family: 'roboto_medium';
 }
 
@@ -120,7 +130,7 @@ header ul li a::before {
     left: 50%;
     transform: translateX(-50%);
     width: 0;
-    height: 2px;
+    height: 1px;
     border-radius: 50px;
     background: orange;
     transition: .6s all;
@@ -129,7 +139,6 @@ header ul li a::before {
 header ul:nth-child(1) li a:hover::before,
 header ul:nth-child(2) li a:hover::before {
     width: 100%;
-    box-shadow: 0 0 5px 1px orange;
 }
 
 header ul li a:hover {
@@ -198,7 +207,7 @@ ul {
     font-size: 10px;
     color: #414462;
     margin-left: 20px;
-    font-family: 'roboto_medium';
+    font-family: 'roboto_bold';
 }
 
 .container_home .sidebar_menu .general_link ul li {
@@ -214,7 +223,7 @@ ul {
 }
 
 .container_home .banner {
-    width: 550px;
+    width: 580px;
     margin-left: 10px;
     display: flex;
     flex-direction: column;
@@ -243,7 +252,7 @@ ul {
     font-size: 10px;
     margin: 0;
     color: #fff;
-    font-family: 'roboto_bold';
+    font-family: 'Gilroy-light';
 }
 
 .container_home .banner .banner_landing .Next img {
@@ -319,6 +328,7 @@ ul {
     font-family: 'roboto_bold';
     z-index: 2;
     color: #414462;
+    opacity: .2;
 }
 
 .container_home .banner .banner_landing .banner_image {
@@ -343,7 +353,7 @@ ul {
 .container_home .banner .demo_game .demo_game_title h1 {
     color: #fff;
     font-size: 30px;
-    font-family: 'roboto_bold';
+    font-family: 'Gilroy';
     font-weight: bold;
 }
 
@@ -352,6 +362,14 @@ ul {
     color: orange;
 }
 
+
+.container_home .banner .demo_game .filter_bar .calander_picker div p {
+    margin: 0 0 -5px 0;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .container_home .banner .demo_game .filter_bar .calander_picker {
     height: 25px;
@@ -374,7 +392,10 @@ ul {
 
 
 .container_home .banner .demo_game .filter_bar .calander_picker div {
-    font-size: 8px;
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container_home .banner .demo_game .filter_bar .filter_icon {
@@ -447,7 +468,6 @@ ul {
 
 .container_home .banner .show_game .paginate_shape .active {
     background: orange;
-    box-shadow: 0 0 5px 1px orange;
 }
 
 .container_home .banner .show_game .game_pc .about_play {
@@ -461,7 +481,7 @@ ul {
     align-items: center;
     flex-direction: column;
     color: #fff;
-    font-family: 'roboto_bold';
+    font-family: 'Gilroy';
 }
 
 .container_home .banner .show_game .game_pc .details img {
@@ -472,7 +492,7 @@ ul {
 }
 
 .container_home .banner .show_game .game_pc .details {
-    width: 200px;
+    width: 220px;
     height: 60px;
     background: #2a2e4e;
     border-radius: 10px;
@@ -484,14 +504,15 @@ ul {
 
 .container_home .banner .show_game .game_pc .details h1 {
     color: #fff;
-    font-size: 10px;
+    font-size: 13px;
     margin: 5px 0 0 10px;
-    padding: 0;
     font-family: 'roboto_bold';
 }
 
+
 .container_home .banner .show_game .game_pc .details .user_gallary {
     display: flex;
+    font-family: 'Gilroy-light';
     direction: rtl;
 }
 
@@ -536,13 +557,15 @@ ul {
 }
 
 .container_home .banner .show_game .about_play h1 {
-    font-size: 13px;
+    font-size: 15px;
+    font-family: 'Gilroy';
     margin: 0;
     padding: 0;
 }
 
 .container_home .banner .show_game .about_play span {
-    font-size: 8px;
+    font-size: 9px;
+    font-family: 'Gilroy-light';
 }
 
 .container_home .banner .show_game .about_play::before {
@@ -687,16 +710,17 @@ ul {
 }
 
 .container_home .chatbox .chatbox_item li h1 {
-    font-size: 12px;
+    font-size: 13px;
     color: #fff;
-    font-family: 'roboto_bold';
+    font-family: 'Gilroy';
     margin: 0;
 }
 
 .container_home .chatbox .chatbox_item li span {
     color: #fff;
-    font-size: 8px;
-    margin: 0;
+    font-size: 9px;
+    margin: 2px 0 0 0;
+    font-family: 'roboto_medium';
 }
 
 .container_home .chatbox .chatbox_item div {
@@ -705,9 +729,85 @@ ul {
 
 .container_home .chatbox .chatbox_item p {
     color: #ccc;
-    font-size: 8px;
-    height: 25px;
+    font-size: 9px;
+    height: 27px;
     width: 100%;
     margin-top: 5px;
     overflow: hidden;
+    font-family: 'roboto_light';
 }
+
+.mobile_header {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #2a2e4e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.mobile_header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile_header ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mobile_header ul li:hover * {
+    color: orange;
+}
+
+.mobile_header ul li i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.mobile_header ul li a {
+    transition: .3s all;
+    font-size: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* @media(min-width:300px) {
+    .banner .banner_landing {
+        display: none;
+    }
+
+    .sidebar_menu {
+        display: none;
+    }
+
+    .show_game {
+        display: none;
+    }
+
+    .chatbox {
+        display: none;
+    }
+
+    .game_pc {
+        display: none;
+    }
+
+    .demo_game {
+        display: none;
+    }
+
+    header {
+        display: none !important;
+    }
+} */
