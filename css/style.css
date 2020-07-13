@@ -1,0 +1,715 @@
+@font-face {
+    src: url('../fonts/Roboto-Light.ttf');
+    font-family: 'roboto_light';
+}
+
+@font-face {
+    src: url('../fonts/Roboto-Bold.ttf');
+    font-family: 'roboto_bold';
+}
+
+@font-face {
+    src: url('../fonts/Roboto-Medium.ttf');
+    font-family: 'roboto_medium';
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #272a48 !important;
+    font-family: 'roboto_light' !important;
+}
+
+.container_home {
+    width: 85%;
+    margin: auto;
+}
+
+header {
+    width: 90%;
+    margin: 15px auto 30px auto;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li img {
+    position: absolute;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)rotate(50deg) !important;
+    width: 40px;
+    z-index: 2;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header ul li .user_profile_image {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #777;
+    overflow: hidden;
+    border-right: 2px solid orange;
+    transform: rotate(-50deg);
+}
+
+
+header ul:nth-child(1) li {
+    margin-right: 40px;
+}
+
+header ul:nth-child(2) li {
+    margin: 0 30px;
+}
+
+
+header ul li a.active {
+    color: orange !important;
+}
+
+header ul li a.active::before {
+    content: "";
+    width: 100%;
+}
+
+header ul:nth-child(3) li {
+    margin-left: 10px;
+}
+
+header ul:nth-child(3) li a:nth-child(2) {
+    font-size: 10px;
+}
+
+header ul:nth-child(3) li a:nth-child(1) {
+    font-family: 'roboto_bold';
+}
+
+header ul:nth-child(3) li a i {
+    color: orange;
+}
+
+header ul li a {
+    position: relative;
+    color: #fff !important;
+    text-decoration: none !important;
+    font-size: 12px;
+    transition: .6s all;
+    padding-bottom: 5px;
+}
+
+header ul li a::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    border-radius: 50px;
+    background: orange;
+    transition: .6s all;
+}
+
+header ul:nth-child(1) li a:hover::before,
+header ul:nth-child(2) li a:hover::before {
+    width: 100%;
+    box-shadow: 0 0 5px 1px orange;
+}
+
+header ul li a:hover {
+    color: orange !important;
+}
+
+.Thunder {
+    position: relative;
+    font-family: 'roboto_bold';
+    font-size: 20px;
+}
+
+.Thunder i {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    font-size: 10px;
+}
+
+
+.container_home .sidebar_menu {
+    width: 250px;
+    background: #2a2e4e;
+    border-radius: 10px;
+    padding: 30px 0 5px 50px;
+}
+
+.container_home .sidebar_menu h3 {
+    font-size: 15px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container_home .sidebar_menu ul {
+    margin: 20px 0;
+    list-style: none;
+}
+
+.container_home .sidebar_menu .popular_games ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+}
+
+.container_home .sidebar_menu ul li .icon_bar {
+    height: 30px;
+    width: 50px;
+}
+
+
+.container_home .sidebar_menu .border_between {
+    height: 100%;
+    width: 2px;
+    background: #26294a;
+}
+
+.container_home .sidebar_menu span {
+    font-size: 10px;
+    color: #414462;
+    margin-left: 20px;
+    font-family: 'roboto_medium';
+}
+
+.container_home .sidebar_menu .general_link ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+}
+
+.container_home .sidebar_menu ul li img {
+    height: 20px;
+    width: 20px;
+}
+
+.container_home .banner {
+    width: 550px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_home .banner .banner_landing {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    background: #2a2e4e;
+    border-radius: 10px;
+}
+
+.container_home .banner .banner_landing .Next {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 74%;
+    right: 4%;
+    width: 80px;
+    height: 50px;
+}
+
+.container_home .banner .banner_landing .Next h5 {
+    font-size: 10px;
+    margin: 0;
+    color: #fff;
+    font-family: 'roboto_bold';
+}
+
+.container_home .banner .banner_landing .Next img {
+    height: 20px;
+    width: 20px;
+}
+
+.container_home .banner .banner_landing .txt_sublime {
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    color: #fff;
+    font-size: 20px;
+}
+
+.container_home .banner .banner_landing .match_day {
+    position: absolute;
+    top: 10%;
+    right: 4%;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    color: white;
+    text-align: center;
+}
+
+.container_home .banner .banner_landing .txt_sm {
+    position: absolute;
+    top: 34%;
+    left: 30%;
+    z-index: 999;
+    color: #ccc;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+
+.container_home .banner .banner_landing .match_day img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 0 5px #26294a;
+}
+
+.container_home .banner .banner_landing .match_day img:nth-child(2) {
+    margin-left: -20px;
+}
+
+.container_home .banner .banner_landing .match_day span {
+    font-size: 10px;
+    margin: 0;
+    font-family: 'roboto_bold';
+}
+
+.container_home .banner .banner_landing .txt_md {
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    font-size: 40px;
+    z-index: 10;
+    font-family: 'roboto_bold';
+    color: orange;
+}
+
+.container_home .banner .banner_landing .txt_bg {
+    position: absolute;
+    top: 30%;
+    left: 23%;
+    font-size: 80px;
+    font-family: 'roboto_bold';
+    z-index: 2;
+    color: #414462;
+}
+
+.container_home .banner .banner_landing .banner_image {
+    position: absolute;
+    top: -38px;
+    left: -130px;
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    z-index: 3;
+}
+
+.chatbox {
+    margin-left: 10px;
+    width: 270px;
+    border-radius: 10px;
+    background: #2a2e4e;
+    padding: 10px 20px;
+}
+
+
+.container_home .banner .demo_game .demo_game_title h1 {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'roboto_bold';
+    font-weight: bold;
+}
+
+
+.container_home .banner .demo_game .demo_game_title h1 span {
+    color: orange;
+}
+
+
+.container_home .banner .demo_game .filter_bar .calander_picker {
+    height: 25px;
+    width: 90px;
+    background: #2a2e4e;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.container_home .banner .demo_game .filter_bar {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.container_home .banner .demo_game .filter_bar .calander_picker div {
+    font-size: 8px;
+}
+
+.container_home .banner .demo_game .filter_bar .filter_icon {
+    height: 30px;
+    color: orange;
+    width: 30px;
+    background: #2a2e4e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 10px;
+}
+
+.container_home .banner .demo_game .demo_game_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.container_home .banner .demo_game .menu_game {
+    display: flex;
+    list-style: none;
+    font-size: 12px;
+    border-bottom: 1px solid #414462;
+    padding-bottom: 5px;
+}
+
+.container_home .banner .demo_game .menu_game li {
+    margin-right: 50px;
+}
+
+.container_home .banner .demo_game .menu_game li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container_home .banner .demo_game .menu_game li a.active {
+    border-bottom: 1px solid orange;
+    padding-bottom: 6px;
+}
+
+.container_home .banner .demo_game .menu_game li a:hover {
+    color: orange;
+}
+
+.container_home .banner .show_game .show_game_title h1 {
+    font-size: 20px;
+    color: #fff;
+}
+
+.container_home .banner .show_game .show_game_title h1 span {
+    color: #fe3b3b;
+}
+
+.container_home .banner .show_game .show_game_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_home .banner .show_game .paginate_shape div {
+    height: 7px;
+    width: 7px;
+    background: #2a2e4e;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.container_home .banner .show_game .paginate_shape .active {
+    background: orange;
+    box-shadow: 0 0 5px 1px orange;
+}
+
+.container_home .banner .show_game .game_pc .about_play {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    background: #2a2e4e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    font-family: 'roboto_bold';
+}
+
+.container_home .banner .show_game .game_pc .details img {
+    height: 40px;
+    width: 40px;
+    box-shadow: 0 0 0 5px #272a48;
+    border-radius: 50%;
+}
+
+.container_home .banner .show_game .game_pc .details {
+    width: 200px;
+    height: 60px;
+    background: #2a2e4e;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.container_home .banner .show_game .game_pc .details h1 {
+    color: #fff;
+    font-size: 10px;
+    margin: 5px 0 0 10px;
+    padding: 0;
+    font-family: 'roboto_bold';
+}
+
+.container_home .banner .show_game .game_pc .details .user_gallary {
+    display: flex;
+    direction: rtl;
+}
+
+
+
+.container_home .banner .show_game .game_pc .details div span {
+    color: #414462;
+    font-size: 10px;
+    padding-top: 5px;
+}
+
+.container_home .banner .show_game .game_pc .details .user_gallary img {
+    height: 20px;
+    margin-left: -10px;
+    width: 20px;
+    box-shadow: none;
+}
+
+.container_home .banner .show_game .game_pc li {
+    margin: 10px 0;
+    list-style: none;
+}
+
+.container_home .banner .show_game .game_pc .time .border_between {
+    height: 1px !important;
+    width: 10px;
+    background: orange;
+    margin: 5px 0;
+}
+
+.container_home .banner .show_game .paginate_shape div:hover {
+    background: orange;
+}
+
+.container_home .banner .show_game .game_pc .time {
+    font-size: 10px;
+    color: #fff;
+}
+
+.container_home .banner .show_game .paginate_shape div:first-child {
+    margin-left: 0;
+}
+
+.container_home .banner .show_game .about_play h1 {
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+.container_home .banner .show_game .about_play span {
+    font-size: 8px;
+}
+
+.container_home .banner .show_game .about_play::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #272a48;
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+}
+
+.container_home .banner .show_game .about_play::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background: #fe3b3b;
+    box-shadow: 0 0 5px 1px #fe3b3b;
+}
+
+.container_home .banner .show_game .about_play .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 999;
+}
+
+.container_home .chatbox .menu {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border-bottom: 1px solid #414462;
+    padding-bottom: 5px;
+}
+
+.container_home .chatbox .menu li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container_home .chatbox .menu li::before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    height: 1px;
+    width: 0;
+    background: orange;
+    transition: .6s all;
+}
+
+.container_home .chatbox .menu li a {
+    font-size: 10px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.container_home .chatbox .menu li.active::before {
+    width: 100%;
+}
+
+.container_home .chatbox .menu li.active,
+.container_home .chatbox .menu li.active a {
+    color: orange;
+}
+
+.container_home .chatbox .menu li:hover * {
+    color: orange;
+}
+
+.container_home .chatbox .menu li:hover::before {
+    width: 100%;
+}
+
+.container_home .chatbox .chatbox_item {
+    list-style: none;
+}
+
+.container_home .chatbox .chatbox_item li:first-child {
+    margin-top: 20px;
+}
+
+.container_home .chatbox .chatbox_item li {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container_home .chatbox .chatbox_item li .image_box {
+    position: relative;
+    height: 50px;
+    width: 50px;
+}
+
+.container_home .chatbox .chatbox_item li .image_box img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+.container_home .chatbox .chatbox_item li .image_box .border_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border-right: 2px solid #414462;
+    transform: rotate(-50deg);
+}
+
+.container_home .chatbox .chatbox_item li .image_box .border_image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-left: 2px solid #414462;
+}
+
+.container_home .chatbox .chatbox_item li h1 {
+    font-size: 12px;
+    color: #fff;
+    font-family: 'roboto_bold';
+    margin: 0;
+}
+
+.container_home .chatbox .chatbox_item li span {
+    color: #fff;
+    font-size: 8px;
+    font-family: 'roboto_medium';
+    margin: 0;
+}
+
+.container_home .chatbox .chatbox_item div {
+    width: 70%;
+}
+
+.container_home .chatbox .chatbox_item p {
+    color: #ccc;
+    font-size: 8px;
+    height: 25px;
+    font-family: 'roboto_medium';
+    width: 100%;
+    margin-top: 5px;
+    overflow: hidden;
+}
